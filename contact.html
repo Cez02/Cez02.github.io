@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/988d809810.js" crossorigin="anonymous"></script>
+                
+        <script type="text/javascript">
+            function UpdateString(){
+                let text = document.location.toString();
+                const chars = text.split('/');
+                if(chars[chars.length-1] == "projects.html"){
+                    document.getElementById("homepage").style.border = "none";
+                    document.getElementById("projectspage").style.border = "solid 2px";
+                    document.getElementById("servicespage").style.border = "none";
+                    document.getElementById("contactpage").style.border = "none";
+                }
+                else if(chars[chars.length-1] == "services.html"){
+                    document.getElementById("homepage").style.border = "none";
+                    document.getElementById("projectspage").style.border = "none";
+                    document.getElementById("servicespage").style.border = "solid 2px";
+                    document.getElementById("contactpage").style.border = "none";
+                }
+                else if(chars[chars.length-1] == "contact.html"){
+                    document.getElementById("homepage").style.border = "none";
+                    document.getElementById("projectspage").style.border = "none";
+                    document.getElementById("servicespage").style.border = "none";
+                    document.getElementById("contactpage").style.border = "solid 2px";
+                }
+                else{
+                    document.getElementById("homepage").style.border = "solid 2px";
+                    document.getElementById("projectspage").style.border = "none";
+                    document.getElementById("servicespage").style.border = "none";
+                    document.getElementById("contactpage").style.border = "none";
+                }
+            }
+
+            document.addEventListener('swup:contentReplaced', UpdateString);
+
+        </script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="navbarContainer">
+                <nav class="navbar">
+                    <ul id="horizontal-list">
+                        <li><a href="/index.html" id="homepage">About me</a></li>
+                        <li><a href="/projects.html" id="projectspage">Projects</a></li>
+                        <li><a href="/services.html" id="servicespage">Services</a></li>
+                        <li><a href="/contact.html" id="contactpage">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <main id="swup" class="transition-fade">
+                <div id="Intro">
+                    <h1 id="page-subtitle" style="color: rgb(30, 92, 30); padding-bottom: 10px; font-weight: normal; font-size: 50px;">Contact</h1>
+
+                    <p style="padding-left: 500px; padding-top: 40px; font-size: 20px; line-height: 40px;">
+                        <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/cezary-czuba%C5%82a-47a090207/?originalSubdomain=pl" style="text-decoration: none; color: black;"> Cezary Czubała</a><br>
+                        <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" style="text-decoration: none; color: black;"> @cez_gd</a><br>
+                        Upwork: <a href="https://www.upwork.com/freelancers/~01f2fdc5265dd534d9" style="text-decoration: none; color: black;"> Cezary C.</a><br>
+                        <i class="fa-solid fa-phone"></i> +48 730 071<br>
+                        <i style="font-style: normal;">e-mail: czarek.czubala@gmail.com</i><br>
+                    </p>
+                </div>
+            </main>
+
+            <footer style="padding-top: 50px;">
+                <p style="text-align: center;">Website by Cezary Czubała<br>Hosted on our beloved git service Github</p>
+            </footer> 
+        </div>
+
+        <script src="/node_modules/swup/dist/swup.min.js"></script>  
+        <script>
+            const swup = new Swup();
+        </script>
+    </body>
+
+</html>
