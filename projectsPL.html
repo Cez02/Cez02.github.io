@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Contact me</title>
+        <title>Projekty</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style.css">
@@ -9,7 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/988d809810.js" crossorigin="anonymous"></script>
-                
+
         <script type="text/javascript">
             function UpdateString(){
                 let text = document.location.toString();
@@ -45,35 +45,44 @@
         </script>
     </head>
 
-    <body>
+    <body onLoad="UpdateString()">
         <div class="container">
             <div class="navbarContainer">
                 <nav class="navbar">
                     <ul id="horizontal-list">
-                        <li><a href="/index.html" id="homepage">About me</a></li>
-                        <li><a href="/projects.html" id="projectspage">Projects</a></li>
-                        <li><a href="/services.html" id="servicespage">Services</a></li>
-                        <li><a href="/contact.html" id="contactpage">Contact</a></li>
+                        <li><a href="/indexPL.html" id="homepage">O mnie</a></li>
+                        <li><a href="/projectsPL.html" id="projectspage">Projekty</a></li>
+                        <li><a href="/servicesPL.html" id="servicespage">Usługi</a></li>
+                        <li><a href="/contactPL.html" id="contactpage">Kontakt</a></li>
                     </ul>
                 </nav>
             </div>
     
             <main id="swup" class="transition-fade">
-                <div id="Intro">
-                    <h1 id="page-subtitle">Contact</h1>
+                <h1 id="page-subtitle">Projekty</h1>
 
-                    <p class="ContactInfo">
-                        <i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/cezary-czuba%C5%82a-47a090207/?originalSubdomain=pl" style="text-decoration: none; color: black;"> Cezary Czubała</a><br>
-                        <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/" style="text-decoration: none; color: black;"> @cez_gd</a><br>
-                        <i class="fa-brands fa-github"></i><a href="https://github.com/Cez02" style="text-decoration: none; color: black;"> Cez02</a><br>
-                        Upwork: <a href="https://www.upwork.com/freelancers/~01f2fdc5265dd534d9" style="text-decoration: none; color: black;"> Cezary C.</a><br>
-                        <i class="fa-solid fa-phone"></i> +48 730 071 704<br>
-                        <i style="font-style: normal;">e-mail: czarek.czubala@gmail.com</i><br>
-                    </p>
+                <div id="ProjectsContainer">
+                    <div class="ProjectEntry" onclick="location.href='https://play.google.com/store/apps/details?id=com.Cez.BoatingAway';" style="cursor: pointer;">
+                        <h3 style="font-weight: normal; font-size: 25px; border-bottom: 1px solid black; padding-bottom: 20px;">Boating Away</h3>                        
+                        <img src="./images/BoatingAwayIcon.png" style="width: 100%; height: 70%; margin-top: -25px; object-fit: cover; border-bottom: 1px solid black;">
+                    </div>
+                    <div class="ProjectEntry" onclick="location.href='https://vaultears.itch.io/pursue-the-horizon';" style="cursor: pointer;">
+                        <h3 style="font-weight: normal; font-size: 25px; border-bottom: 1px solid black; padding-bottom: 20px;">Pursue the Horizon</h3>                        
+                        <img src="./images/PtHIcon.png" style="width: 100%; height: 70%; margin-top: -25px; object-fit: cover; border-bottom: 1px solid black;">
+                    </div>
+                    <div class="ProjectEntry" onclick="location.href='https://czarekcz.itch.io/are-you-lost-baby-intern';" style="cursor: pointer;">
+                        <h3 style="font-weight: normal; font-size: 25px; border-bottom: 1px solid black; padding-bottom: 20px;">Are you lost, baby intern?</h3>                        
+                        <img src="./images/BIIcon.png" style="width: 100%; height: 70%; margin-top: -25px; object-fit: cover; border-bottom: 1px solid black;">
+                    </div>
+                    <div class="ProjectEntry" onclick="location.href='https://czarekcz.itch.io/siol';" style="cursor: pointer;">
+                        <h3 style="font-weight: normal; font-size: 25px; border-bottom: 1px solid black; padding-bottom: 20px;">Siol</h3>                        
+                        <img src="./images/SiolIcon.png" style="width: 100%; height: 70%; margin-top: -25px; object-fit: cover; border-bottom: 1px solid black;">
+                    </div>
                 </div>
 
+
                 <footer style="padding-top: 50px;">
-                    <p style="text-align: center;">Website by Cezary Czubała<br>Hosted on our beloved git service Github</p>
+                    <p style="text-align: center;">Strona stworzona przez Cezarego Czubałę<br>Hostowana na kochanym serwisie Github.</p>
                 </footer> 
 
             </main>
