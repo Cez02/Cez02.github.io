@@ -31,7 +31,7 @@
 
 </head>
 
-<body>
+<body style="overflow-x: hidden;">
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
@@ -55,22 +55,25 @@
     </div>
   </header><!-- End Header -->
 
-  
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/BackgroundVideos.gif)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Cezary Czubała</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Game developer, Software engineer, Competitive programmer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
+   <!-- ======= Hero Section ======= -->
+  <div id="hero" class="video-background">
+    <div class="video-wrap">
+      <div id="video">
+        <video id="bgvid" autoplay loop muted playsinline>
+          <source src="assets/img/BGVideo.mp4" type="video/mp4">
+        </video>
+        
       </div>
     </div>
-  </div><!-- End Hero Section -->
+  </div>
+
+  <div class="hero text-center">
+    <h1 class="hero-title mb-4">I am Cezary Czubała</h1>
+    <p class="hero-subtitle"><span class="typed" data-typed-items="Game developer, Software engineer, Algorithmics teacher"></span></p>
+  </div>
+
+
+
 
   <main id="main">
 
