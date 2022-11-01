@@ -184,6 +184,17 @@ a:hover {
   bottom: -12px;
 }
 
+/*--/ Skills /--*/
+
+.skill{
+  transition: font-size 0.5s;
+}
+
+.skill:hover {
+  font-size: 25px;
+  transition: font-size 0.5s;
+}
+
 /*------/ Box /------*/
 .box-pl2 {
   padding-left: 2rem;
