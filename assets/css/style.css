@@ -189,10 +189,19 @@ a:hover {
 .skill{
   transition: font-size 0.5s;
 }
-
+/* 
 .skill:hover {
   font-size: 25px;
   transition: font-size 0.5s;
+} */
+
+.skill::before {
+  content: "";
+  position: relative;
+  height: 3px;
+  background-color: #44ff00;
+  width: 100px;
+  bottom: -12px;
 }
 
 /*------/ Box /------*/
