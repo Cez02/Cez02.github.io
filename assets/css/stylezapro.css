@@ -154,7 +154,15 @@ body {
   .title-s {
     font-weight: 300;
     color: #ffffff;
-    font-size: 2.7rem;
+    font-size: 1.8rem;
+  }
+
+  @media (min-width: 750px){
+    .title-s {
+        font-weight: 300;
+        color: #ffffff;
+        font-size: 2rem;
+    }
   }
   
   /*--/ Title A /--*/
@@ -760,7 +768,7 @@ body {
   .hero .hero-title {
     color: #fff;
     font-weight: 400;
-    font-size: 5rem;
+    font-size: 3rem;
   }
   @media (min-width: 768px) {
     .hero .hero-title {
@@ -768,7 +776,7 @@ body {
     }
   }
   .hero .hero-subtitle {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 400;
     color:rgba(170, 170, 170, 1)
   }
@@ -789,11 +797,11 @@ body {
   }
   .hero-single .hero-title {
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 7rem;
   }
   @media (min-width: 768px) {
     .hero-single .hero-title {
-      font-size: 10rem;
+      font-size: 8rem;
     }
   }
   .hero-single .breadcrumb {
