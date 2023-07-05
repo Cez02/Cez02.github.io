@@ -782,9 +782,9 @@ body {
   }
   
   .hero .hero-title {
-    color: #EFD463;
+    color: #FF56AA;
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   @media (min-width: 768px) {
     .hero .hero-title {
@@ -792,9 +792,9 @@ body {
     }
   }
   .hero .hero-subtitle {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 400;
-    color: #aba34a
+    color: #EFD463;
   }
   @media (min-width: 768px) {
     .hero .hero-subtitle {
