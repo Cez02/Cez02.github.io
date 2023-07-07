@@ -167,7 +167,7 @@ body {
   
   /*--/ Title s /--*/
   .title-s {
-    font-weight: 550;
+    font-weight: 570;
     color: #000000;
     opacity: 0;
     font-size: 1.8rem;
@@ -176,7 +176,7 @@ body {
 
   @media (min-width: 750px){
     .title-s {
-        font-weight: 550;
+        font-weight: 570;
         color: #000000;
         opacity: 0;
         font-size: 1.8rem;
