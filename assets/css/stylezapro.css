@@ -59,7 +59,7 @@ body {
     text-decoration: none;
     transition: all 0.5s ease-in-out;
   }
-  
+
   .p-r {
     position: relative;
   }
@@ -167,16 +167,21 @@ body {
   
   /*--/ Title s /--*/
   .title-s {
-    font-weight: 300;
-    color: #ffffff;
+    font-weight: 550;
+    color: #000000;
+    opacity: 0;
     font-size: 1.8rem;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);    
   }
 
   @media (min-width: 750px){
     .title-s {
-        font-weight: 300;
-        color: #ffffff;
-        font-size: 2rem;
+        font-weight: 550;
+        color: #000000;
+        opacity: 0;
+        font-size: 1.8rem;
+        animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);    
+            font-size: 2rem;
     }
   }
   
@@ -245,10 +250,8 @@ body {
   .box-shadow-full {
     padding: 3rem 1.25rem;
     position: relative;
-    background-color: #481010;
     margin-bottom: 3rem;
     z-index: 2;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
   }
   @media (min-width: 768px) {
     .box-shadow-full {
@@ -766,14 +769,27 @@ body {
     min-height: 100vh;
     /* background-color: rgb(0, 0, 0, 0.7); */
   }
-  
+
+  @keyframes fade-in {
+    100% {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+
+  @keyframes scale {
+    100% {
+      transform: scale(1);
+    }
+  }
+
   .hero{
     position: absolute;
-    top: 5%;
+    top: 30%;
     width: 100%;
     overflow: hidden;
     background-color: rgb(0, 0, 0, 0.6);
-    
+
   }
   
   .hero .hero-content {
@@ -782,23 +798,37 @@ body {
   }
   
   .hero .hero-title {
-    color: #FF56AA;
+    color: #fd73b8;
     font-weight: 400;
     font-size: 2.5rem;
+    opacity: 0;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
+    animation-delay: 1.4s;    
   }
   @media (min-width: 768px) {
     .hero .hero-title {
       font-size:4rem;
+      transform: scale(0.94);
+      opacity: 0;
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
+      animation-delay: 1.4s;    
     }
   }
+
   .hero .hero-subtitle {
     font-size: 1.8rem;
     font-weight: 400;
     color: #EFD463;
+    opacity: 0;
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
+    animation-delay: 0.7s;    
   }
   @media (min-width: 768px) {
     .hero .hero-subtitle {
       font-size: 3rem;
+      opacity: 0;
+      animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
+      animation-delay: 0.7s;    
     }
   }
   .hero .text-slider-items {
