@@ -168,7 +168,7 @@ body {
   /*--/ Title s /--*/
   .title-s {
     font-weight: 570;
-    color: #000000;
+    color: #EFD463;
     opacity: 0;
     font-size: 1.8rem;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);    
@@ -177,7 +177,7 @@ body {
   @media (min-width: 750px){
     .title-s {
         font-weight: 570;
-        color: #000000;
+        color: #EFD463;
         opacity: 0;
         font-size: 1.8rem;
         animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);    
@@ -798,12 +798,12 @@ body {
   }
   
   .hero .hero-title {
-    color: #fd73b8;
+    color: #ff88c3;
     font-weight: 400;
     font-size: 2.5rem;
     opacity: 0;
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
-    animation-delay: 1.4s;    
+    animation-delay: 2.5s;    
   }
   @media (min-width: 768px) {
     .hero .hero-title {
@@ -811,7 +811,7 @@ body {
       transform: scale(0.94);
       opacity: 0;
       animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1), fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);;
-      animation-delay: 1.4s;    
+      animation-delay: 2.5s;    
     }
   }
 
