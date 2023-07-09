@@ -23,6 +23,15 @@ body {
     font-family: CustomFont;
 
   }
+
+  @keyframes play {
+  0% {
+  background: url("../img/fireworks.gif");
+  }
+  100% {
+  background: transparent;
+  }
+  }
   
   
   h1,
