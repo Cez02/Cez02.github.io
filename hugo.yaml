@@ -254,7 +254,7 @@ params:
         jobs:
           - name: "C++ Developer Intern"
             date: "Jul 2023 - Sep 2025"
-            content: "Mostly legacy project conversions and maintenance. Converted many legacy projects from in-house build tools to CMake and setup automatic build pipelines. Left to pursue build career in game dev."
+            content: "Mostly legacy project conversions and maintenance. Converted many legacy projects from in-house build tools to CMake and setup automatic build pipelines. Left to pursue career in game dev."
             # info:
             #   content: Worked as a C++ Developer Intern
             # featuredItems:
@@ -280,7 +280,7 @@ params:
             date: "Oct 2021 - Jul 2025"
             # info:
             #   content: I worked as a software developer for more than one year in Amazon.
-            content: Taught a variety of algorithms to high school students, starting from beginner-friendly tasks and going up to advanced topics such as FFT and optimizational data structures. Mainly focused towards competitive programming and the polish informatics olympiad.
+            content: Taught a variety of algorithms to high school students, starting from beginner-friendly tasks and going up to advanced topics (FFT, Kd-trees, etc). Mainly focused towards competitive programming and the Polish informatics olympiad.
 
       # - company: "Apple"
       #   companyUrl: "https://example.com"
@@ -390,7 +390,7 @@ params:
     items:
       - title: BEng Terrain Renderer Thesis
         content: |-
-          A terrain renderer written in Vulkan that uses mesh shaders for auotomatic LOD scaling.
+          A terrain renderer written in Vulkan that uses mesh shaders for autotomatic LOD scaling.
           
           It pushed the SRTM data straight to the mesh shader which then generated geometry. It was generally quite ok however due to time constraints many potential optimizations weren't implemented.
         
